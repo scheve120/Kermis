@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe4b0280-4782-4048-aebf-c9015151f8fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nl/kermis/attracties/Attracties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nl/kermis/attracties/Attracties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nl/kermis/attracties/Entree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nl/kermis/attracties/Entree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nl/kermis/attracties/Kassa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nl/kermis/attracties/Kassa.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,4 +1,20 @@
 package nl.kermis.attracties;
 
-public class Kassa {
+class Kassa implements PrijzenAttracties {
+    int productPrijs;
+
+    double draaimolenEntreePrijs(int personen, double prijsPerKaartje) {
+        int aantalPersonen = personen;
+        double prijsKaartje = prijsPerKaartje;
+        double totaal = aantalPersonen * prijsKaartje;
+        return totaal;
+    }
+
+    static void prijzen() {
+
+    }
+}
+
+interface PrijzenAttracties {
+
 }
