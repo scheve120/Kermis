@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe4b0280-4782-4048-aebf-c9015151f8fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/nl/kermis/attracties/Attracties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nl/kermis/attracties/Attracties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nl/kermis/attracties/Attractie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nl/kermis/attracties/DraaiMolen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nl/kermis/attracties/Kermis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nl/kermis/attracties/WeGaanNaarDeKermis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nl/kermis/attracties/Attracties.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/nl/kermis/attracties/Entree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nl/kermis/attracties/Entree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/nl/kermis/attracties/Kassa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nl/kermis/attracties/Kassa.java" afterDir="false" />
     </list>
@@ -30,8 +35,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="nl.kermis.attracties" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.WeGaanNaarDeKermis">
     <configuration name="Entree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="nl.kermis.attracties.Entree" />
       <module name="Kermis" />
@@ -45,8 +56,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WeGaanNaarDeKermis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nl.kermis.attracties.WeGaanNaarDeKermis" />
+      <module name="Kermis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.kermis.attracties.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WeGaanNaarDeKermis" />
         <item itemvalue="Application.Entree" />
       </list>
     </recent_temporary>
@@ -63,5 +88,76 @@
       <updated>1585077069499</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="612" y="181" key="#com.intellij.ide.util.MemberChooser" timestamp="1585400154678">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-1155" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585324950854" />
+    <state x="612" y="181" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585400154678" />
+    <state x="477" y="172" key="#com.intellij.refactoring.memberPushDown.PushDownDialog" timestamp="1585402710914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="172" key="#com.intellij.refactoring.memberPushDown.PushDownDialog/0.0.1536.824@0.0.1536.824" timestamp="1585402710914" />
+    <state x="571" y="304" width="393" height="220" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585405138722">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="571" y="304" width="393" height="220" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1585405138722" />
+    <state x="-1113" y="423" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1585323935381">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1113" y="423" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585323935381" />
+    <state width="1493" height="260" key="GridCell.Tab.0.bottom" timestamp="1585493930807">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585325851408" />
+    <state width="1493" height="281" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1585301102286" />
+    <state width="1493" height="260" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585493930807" />
+    <state width="1493" height="260" key="GridCell.Tab.0.center" timestamp="1585493930807">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585325851408" />
+    <state width="1493" height="281" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1585301102286" />
+    <state width="1493" height="260" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585493930807" />
+    <state width="1493" height="260" key="GridCell.Tab.0.left" timestamp="1585493930807">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585325851408" />
+    <state width="1493" height="281" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1585301102285" />
+    <state width="1493" height="260" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585493930807" />
+    <state width="1493" height="260" key="GridCell.Tab.0.right" timestamp="1585493930807">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585325851408" />
+    <state width="1493" height="281" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1585301102286" />
+    <state width="1493" height="260" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585493930807" />
+    <state width="1493" height="260" key="GridCell.Tab.1.bottom" timestamp="1585493930807">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585325851409" />
+    <state width="1493" height="260" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585493930807" />
+    <state width="1493" height="260" key="GridCell.Tab.1.center" timestamp="1585493930807">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585325851409" />
+    <state width="1493" height="260" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585493930807" />
+    <state width="1493" height="260" key="GridCell.Tab.1.left" timestamp="1585493930807">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585325851409" />
+    <state width="1493" height="260" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585493930807" />
+    <state width="1493" height="260" key="GridCell.Tab.1.right" timestamp="1585493930807">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585325851409" />
+    <state width="1493" height="260" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585493930807" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1585401549944">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1585401549944" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585402015150">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585402015150" />
   </component>
 </project>

@@ -10,7 +10,7 @@ class Kassa implements PrijzenAttracties {
         return totaal;
     }
 
-    static void prijzen() {
+    void prijzen() {
 
     }
 }

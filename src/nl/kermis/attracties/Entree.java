@@ -2,10 +2,10 @@ package nl.kermis.attracties;
 
 import java.util.Scanner;
 
-public class Entree {
-    public static void main(String[] args) {
+class Entree {
+    void Entree() {
         System.out.println("Hallo welkom op kermis scheve120!!");
-        Attractie kermisAttractie = new Attractie();
+        Kermis kermisAttractie = new Kermis();
         kermisAttractie.welkeAttractie(inputScanner());
     }
 
@@ -13,4 +13,13 @@ public class Entree {
         Scanner userInput = new Scanner(System.in);
         return  userInput;
     }
+
+    static void bezoeker() {
+
+    }
+
+    static void aantalPersonen() {
+
+    }
+
 }
