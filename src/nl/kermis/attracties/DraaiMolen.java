@@ -11,6 +11,7 @@ class DraaiMolen extends Attractie {
 
     DraaiMolen() {
         entreeKosten = kostenRitjeDraaimolen();
+        draaimolenOpenOfDicht();
 //        initDraaimolen(String );
     }
 
@@ -25,41 +26,31 @@ class DraaiMolen extends Attractie {
     Of als hij ritje maakt hoeveel gaat het kosten?
     En zo niet moet de bezoeker terug naar kies een attractie of hij verlaat de kermis.
      */
-    void initDraaimolen(int bezoeker) {
-
-//        boolean bool;
-        switch (bezoeker) {
-            case 1:
-                System.out.println(attractie+entreeKosten);
-                break;
-            case 2:
-                draaien();
-                System.out.println("Dit koste u € " + entreeKosten);
-                break;
-            case 3:
-                break;
-            default:
-                System.out.println("Wat wil je doen?");
+    public void draaimolenOpenOfDicht () {
+        if (isOpen() || onderHoud() ) {
+//            attractieOpen = isOpen() && onderHoud();
+            attractie = "Draaimolen is open";
+            attractieOpen = true;
+        } else if (isOpen()) {
+            attractie = "Draaimolen is niet open";
+            attractieOpen = false;
+        } else {
+            attractie = "Draaimolen is in onderhoud";
+            attractieOpen = false;
         }
     }
-
     private boolean isOpen() {
         Random openDicht = new Random();
         boolean open;
-        int openOfDicht = openDicht.nextInt(4) + 1;
-
-        if(openOfDicht > 2) {
-            open = true;
-        } else {
-            open = false;
-        }
+        int openOfDicht = openDicht.nextInt(6) + 1;
+        open = 2 < openOfDicht && onderHoud();
         return open;
     }
 
     @Override
     void draaien() {
         String bericht;
-        if(isOpen()) {
+        if(attractieOpen) {
             System.out.println("De draaimolen gaat rond en rond en rond....");
         } else {
             System.out.println("De draaimolen is niet open");
@@ -81,7 +72,11 @@ class DraaiMolen extends Attractie {
 
     }
 
-    void onderHoud() {
-
+    private boolean onderHoud() {
+        Random openDicht = new Random();
+        boolean onderhoud;
+        int inOnderhoud = openDicht.nextInt(6) + 1;
+        onderhoud = 2 < inOnderhoud;
+        return onderhoud;
     }
 }

@@ -7,8 +7,8 @@ abstract class Attractie { // Deze class moet eigenlijk abstract zijn.
     protected double entreeKosten;
     protected int aantalpersonen;
     protected String attractie;
-    protected String info = "";
-    protected String bezoeker = "";
+    protected boolean attractieOpen;
+    boolean bezoeker;
 
     Attractie() {
 
@@ -31,8 +31,21 @@ abstract class Attractie { // Deze class moet eigenlijk abstract zijn.
 
     }
 
-    void initAttractie() {
-
+    void initAttractie(int bezoeker) {
+//        boolean bool;
+        switch (bezoeker) {
+            case 1:
+                System.out.println(attractie+entreeKosten);
+                break;
+            case 2:
+                draaien();
+                System.out.println("Dit koste u € " + entreeKosten);
+                break;
+            case 3:
+                break;
+            default:
+                System.out.println("Wat wil je doen?");
+        }
     }
 
     void draaien() { // zou ook abstract kunnen zijn.
@@ -47,8 +60,8 @@ class BotsAutos extends Attractie {
     }
 
     void rondjeBotsautos() {
-        this.attractie = "Je gaat nu naar de botsautos";
-        this.entreeKosten = 20;
+        this.attractie = "Deze Attractie kost € ";
+        this.entreeKosten = 2.00;
     }
 }
 

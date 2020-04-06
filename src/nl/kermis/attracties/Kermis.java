@@ -22,7 +22,7 @@ public class Kermis {
     void openen() {
 
         String actie = watGaanWeDoen(scanner.inputScanner());
-        attractieDraaimolen(scanner.inputScanner());
+//        attractieDraaimolen(scanner.inputScanner());
         // WaarWilJeKaartjesVoorKopen
         // welkeAttractieGaanWeDraaien
         //
@@ -34,8 +34,25 @@ public class Kermis {
 
     private String watGaanWeDoen(Scanner bezoeker) { // verwerken invoer
 //        Scanner userInput = new Scanner(System.in);
+        boolean bool;
         System.out.println("Naaar welke attractie wil je? (1 = Draaimolen, 2 = ");
-
+        do {
+            switch (bezoeker.nextInt()) {
+                case 1:
+                    System.out.println("Je gaat nu naar de draaimolen.");
+                    attractieDraaimolen(bezoeker);
+                    bool = false;
+                    break;
+                case 2:
+                    System.out.println("Je gaat nu naar de botsauto's");
+                    botsautos(bezoeker);
+                    bool = false;
+                    break;
+                default:
+                    System.out.println("Deze attractie bestaat niet.");
+                    bool = true;
+            }
+        } while (bool);
 //        naarDraaimolen.info;
         // Alternatief voor keuzes
 //        List<Attractie> attractieLijst = new ArrayList<>();
@@ -67,23 +84,45 @@ public class Kermis {
         boolean bool;
         System.out.println("Welkom bij de draaimolen.");
 //        naarDraaimolen.initAttractie();
-        do {
-            int bezoeker = init.nextInt();
-            if (bezoeker < 3) {
+//        naarDraaimolen.;
+        new DraaiMolen().draaimolenOpenOfDicht();
+        System.out.println(naarDraaimolen.attractie + " Info " + naarDraaimolen.attractieOpen);
+        if (naarDraaimolen.attractieOpen){
+            do {
+                int bezoeker = init.nextInt();
+                if (bezoeker < 3) {
 //                init.nextLine();
-                ((DraaiMolen) naarDraaimolen).initDraaimolen(bezoeker);
-                bool = true;
-            } else if (bezoeker == 4) {
-                System.out.println("Voor hoeveel personen wil je een kaartje?");
-                naarDraaimolen.entreeKosten = afrekenen.draaimolenEntreePrijs(init.nextInt(), naarDraaimolen.entreeKosten);
-                System.out.println("Dit kost totaal € " +naarDraaimolen.entreeKosten);
-                System.out.println("Druk op 2 om een rondje te maken.. ");
-                bool = true;
-            } else {
-                bool = false;
-            }
-        } while (bool);
+                    if (naarDraaimolen.entreeKosten != 0) {
+                        ((DraaiMolen) naarDraaimolen).initAttractie(bezoeker);
+                    } else {
+                        System.out.println("Druk 4 om kaartjes te kopen.");
+                    }
+                    bool = true;
+                } else if (bezoeker == 4) {
+                    System.out.println("Voor hoeveel personen wil je een kaartje?");
+                    naarDraaimolen.entreeKosten = afrekenen.draaimolenEntreePrijs(init.nextInt(), naarDraaimolen.entreeKosten);
+                    System.out.println("Dit kost totaal € " + naarDraaimolen.entreeKosten);
+                    System.out.println("Druk op 2 om een rondje te maken.. ");
+                    bool = true;
+                } else {
+                    bool = false;
+                }
+            } while (bool);
+
+        } else {
+            System.out.println("Draaimolen is niet open.");
+        }
+//        new DraaiMolen();
+        openen();
 //        System.out.println("Dit rondje koste " + naarDraaimolen.entreeKosten);
+    }
+
+    /*
+    Hier gaan we naar de botsautos.
+     */
+    void botsautos(Scanner init) {
+        System.out.println("Welkom bij de botsautos");
+        openen();
     }
 }
 
